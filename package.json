@@ -1,0 +1,42 @@
+{
+  "name": "@flowgrammer420/otc-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP Server for Open Telekom Cloud - Control your OTC infrastructure via Claude Desktop or n8n",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "otc-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "open-telekom-cloud",
+    "otc",
+    "claude",
+    "ai",
+    "cloud",
+    "infrastructure"
+  ],
+  "author": "flowgrammer420",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.0",
+    "crypto-js": "^4.2.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.0",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
